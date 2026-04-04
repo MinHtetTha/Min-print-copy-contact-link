@@ -6,7 +6,7 @@
     <title>Min Print & Copy - Contact Links</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* CSS Styling */
+        /* အခြေခံ Setup */
         * {
             margin: 0;
             padding: 0;
@@ -18,19 +18,20 @@
             background-color: #e67e22; /* လိမ္မော်ရောင် Background */
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* အပေါ်ကနေ စပြဖို့ */
             min-height: 100vh;
-            padding: 25px;
+            padding: 40px 20px;
         }
 
         .container {
             width: 100%;
-            max-width: 480px;
+            max-width: 500px; /* Container ကို နည်းနည်း ပိုကျယ်ပေးထားတယ် */
             text-align: center;
         }
 
+        /* Profile ပိုင်း */
         .profile {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .profile-img {
@@ -38,65 +39,74 @@
             height: 110px;
             background: #ffffff;
             border-radius: 50%;
-            margin: 0 auto 15px;
+            margin: 0 auto 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 45px;
-            color: #e67e22;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            overflow: hidden; /* ပုံကို အဝိုင်းထဲ ကွက်တိဖြစ်အောင် */
+            padding: 0;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ပုံမပြဲသွားအောင် */
         }
 
         h1 {
             color: #000;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 800;
             margin-bottom: 12px;
-            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         .description {
             color: #000;
-            font-size: 15px;
-            line-height: 1.7;
-            margin-bottom: 25px;
-            padding: 0 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            padding: 0 10px;
+            font-weight: 500;
         }
 
+        /* Button များ (Links) */
         .links-group {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 15px; /* Button တစ်ခုနဲ့တစ်ခု အကွာအဝေး */
         }
 
         .link-item {
             background: #ffffff;
-            padding: 16px 20px;
-            border-radius: 15px;
+            padding: 18px 25px; /* အပေါ်အောက်နဲ့ ဘေးတိုက် ပိုကျယ်အောင် */
+            border-radius: 12px; /* ထောင့်လေးတွေ နည်းနည်းဝိုင်းအောင် */
             text-decoration: none;
             color: #333;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%; /* အလျားအပြည့် ရှည်အောင် */
         }
 
         .link-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-            background-color: #f8f9fa;
+            transform: scale(1.02); /* Mouse တင်ရင် နည်းနည်းကြီးလာမယ် */
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            background-color: #fcfcfc;
         }
 
         .link-item i {
             font-size: 24px;
-            width: 35px;
+            width: 40px;
             margin-right: 15px;
             text-align: center;
         }
 
-        /* Icon Colors */
+        /* Icon အရောင်များ */
         .fa-telegram { color: #0088cc; }
         .fa-viber { color: #7360f2; }
         .fa-facebook-messenger { color: #006aff; }
@@ -109,12 +119,11 @@
             font-size: 16px;
         }
 
-        /* Footer or Small note */
         .footer-note {
-            margin-top: 30px;
+            margin-top: 40px;
             font-size: 12px;
             color: #000;
-            opacity: 0.8;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -123,8 +132,9 @@
     <div class="container">
         <div class="profile">
             <div class="profile-img">
-                <i class="fas fa-print"></i>
+                <img src="Logo.jpg" alt="Min Print & Copy Logo">
             </div>
+            
             <h1>MIN PRINT & COPY</h1>
             <p class="description">
                 ချစ်ခင်ရပါသော Customer များခင်ဗျာ၊ လူကြီးမင်းတို့ ပေးပို့လိုသည့် ပုံများ၊ ဖိုင်များကို အောက်ဖော်ပြပါ Link များမှတစ်ဆင့် ပေးပို့နိုင်ပါတယ်ခင်ဗျာ။
