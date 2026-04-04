@@ -6,7 +6,6 @@
     <title>Min Print & Copy - Contact Links</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* အခြေခံ Setup */
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +14,7 @@
         }
 
         body {
-            background-color: #e67e22; /* လိမ္မော်ရောင် Background */
+            background-color: #e67e22;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -29,30 +28,28 @@
             text-align: center;
         }
 
-        /* Profile ပိုင်း */
         .profile {
             margin-bottom: 30px;
         }
 
+        /* Logo အဝိုင်းကို အဖြူရောင်ဘောင်မပါအောင် ပြင်ဆင်ထားမှု */
         .profile-img {
-            width: 120px; /* Logo Container အရွယ်အစားကို အရင်အတိုင်း ထားပါတယ် */
-            height: 120px;
-            background: #ffffff;
-            border-radius: 50%;
+            width: 100px; /* Logo အဝိုင်း Size */
+            height: 100px;
             margin: 0 auto 15px;
+            border-radius: 50%;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 4px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            overflow: hidden;
-            padding: 5px; /* ပုံကို အဝိုင်းနဲ့ နည်းနည်း ဝေးအောင် padding ထည့်ပေးထားတယ် */
+            border: 2px solid rgba(255, 255, 255, 0.3); /* ဘောင်ကို အပါးဆုံးပဲ ထားထားပါတယ် */
+            background-color: transparent; /* အဖြူရောင် နောက်ခံကို ဖယ်လိုက်ပါတယ် */
         }
 
         .profile-img img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* ပုံကို ကြီးမနေအောင် contain နဲ့ ချုပ်ပေးလိုက်တာပါ */
+            object-fit: cover; /* ပုံကို အဝိုင်းထဲ အပြည့်ဖြစ်စေမှာပါ */
         }
 
         h1 {
@@ -72,7 +69,6 @@
             font-weight: 600;
         }
 
-        /* Button များ (Links) */
         .links-group {
             display: flex;
             flex-direction: column;
@@ -87,8 +83,8 @@
             color: #333;
             display: flex;
             align-items: center;
-            justify-content: center; /* စာသားတွေကို Button ရဲ့ အလယ်တည့်တည့် ရောက်အောင် လုပ်ပေးထားပါတယ် */
-            position: relative; /* Icon အတွက် နေရာချဖို့ */
+            justify-content: center;
+            position: relative;
             transition: all 0.3s ease;
             box-shadow: 0 3px 6px rgba(0,0,0,0.1);
             width: 100%;
@@ -97,17 +93,14 @@
         .link-item:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-            background-color: #fcfcfc;
         }
 
-        /* Icon ကို ဘယ်ဘက်မှာပဲ ကပ်ထားပါတယ် */
         .link-item i {
             font-size: 20px;
             position: absolute;
             left: 20px;
         }
 
-        /* Icon အရောင်များ */
         .fa-telegram { color: #0088cc; }
         .fa-viber { color: #7360f2; }
         .fa-facebook-messenger { color: #006aff; }
@@ -118,7 +111,6 @@
         .link-text {
             font-weight: 700;
             font-size: 16px;
-            text-align: center;
         }
 
         .footer-note {
@@ -183,3 +175,5 @@
 
 </body>
 </html>
+
+
