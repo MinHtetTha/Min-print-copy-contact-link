@@ -32,9 +32,8 @@
             margin-bottom: 30px;
         }
 
-        /* Logo အဝိုင်းကို အဖြူရောင်ဘောင်မပါအောင် ပြင်ဆင်ထားမှု */
         .profile-img {
-            width: 100px; /* Logo အဝိုင်း Size */
+            width: 100px;
             height: 100px;
             margin: 0 auto 15px;
             border-radius: 50%;
@@ -42,28 +41,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid rgba(255, 255, 255, 0.3); /* ဘောင်ကို အပါးဆုံးပဲ ထားထားပါတယ် */
-            background-color: transparent; /* အဖြူရောင် နောက်ခံကို ဖယ်လိုက်ပါတယ် */
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background-color: transparent;
         }
 
         .profile-img img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* ပုံကို အဝိုင်းထဲ အပြည့်ဖြစ်စေမှာပါ */
+            object-fit: cover;
         }
 
         h1 {
             color: #000;
             font-size: 24px;
             font-weight: 800;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-transform: uppercase;
         }
 
         .description {
             color: #000;
             font-size: 14px;
-            line-height: 1.6;
+            line-height: 1.8;
             margin-bottom: 25px;
             padding: 0 10px;
             font-weight: 600;
@@ -118,7 +117,17 @@
             font-size: 12px;
             color: #000;
             font-weight: bold;
-            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        /* လိပ်စာစာသားကို ဒီနေရာမှာ သေးပေးထားပါတယ် */
+        .address-text {
+            margin: 10px auto;
+            font-size: 11px; /* Font size ကို ထပ်လျှော့လိုက်ပါတယ် */
+            opacity: 0.85;
+            font-weight: 500;
+            max-width: 80%; /* စာကြောင်းအရမ်းမရှည်အောင် ဘေးကနေ ထိန်းထားပါတယ် */
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -131,8 +140,12 @@
             </div>
             
             <h1>MIN PRINT & COPY</h1>
+            
             <p class="description">
-                ချစ်ခင်ရပါသော Customer များခင်ဗျာ၊<br> လူကြီးမင်းတို့ ပေးပို့လိုသည့် ပုံများ၊ ဖိုင်များကို အောက်ဖော်ပြပါ Link များမှတစ်ဆင့် ပေးပို့နိုင်ပါတယ်ခင်ဗျာ။
+                ချစ်ခင်ရပါသော Customer များခင်ဗျာ၊<br>
+                လူကြီးမင်းတို့ ပေးပို့လိုသည့် ပုံများ၊ ဖိုင်များကို<br>
+                အောက်ဖော်ပြပါ Link များမှတစ်ဆင့်<br>
+                ပေးပို့နိုင်ပါတယ်ခင်ဗျာ။
             </p>
         </div>
 
@@ -167,16 +180,15 @@
                 <span class="link-text">Contact Number</span>
             </a>
         </div>
-        
+
+        <div class="footer-note">
             <div class="address-text">
-                မေခဆောင်(1B)၊ သမိုင်းကောလိပ်လမ်း၊ လှိုင်မြို့နယ်<br>
-            <div class="footer-note">
-                © 2026 Min Print & Copy
+                မေခဆောင်(1B)၊ သမိုင်းကောလိပ်လမ်း၊ လှိုင်မြို့နယ်
             </div>
+            © 2026 Min Print & Copy
         </div>
     </div>
 
 </body>
 </html>
-
 
